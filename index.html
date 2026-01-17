@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="DesignNest – Premium modular kitchens, wardrobes, full home renovation & interior design solutions.">
+    <meta name="keywords" content="Interior Design, Modular Kitchen, Wardrobe, Home Renovation">
+    <meta name="author" content="DesignNest">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesignNest</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-lime-100 text-slate-800">
+    <!-- Navigation Bar -->
+    <header class="bg-slate-50 shadow-md fixed w-full z-50 top-0 ">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex flex-col items-start">
+            <span class="text-3xl font-bold font-['Playfair_Display']"><span class="text-red-500">DESIGN</span><span class="text-lime-600">NEST</span></span>
+            <span class="text-sm font-medium text-slate-600 "> Spaces Where You Love to Live</span> 
+            </div>
+
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#" class="text-red-500 hover:text-lime-500 rounded-full transition duration-300 font-bold">Home</a>
+                <a href="#about" class="text-slate-600 hover:text-lime-500 transition duration-300 font-bold">About</a>
+                <a href="#services" class="text-slate-600 hover:text-lime-500 transition duration-300 font-bold">Services</a>
+                
+                <div class="relative dropdown">
+                    <a href="#products" class="text-slate-600 hover:text-lime-500 transition duration-300 font-bold cursor-pointer">Products</a>
+                    <div class="dropdown-menu hidden absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-60 bg-white rounded-lg shadow-xl py-2 z-50 border border-lime-200">
+                        <div class="group relative px-4 py-2 hover:bg-lime-50">
+                            <a href="#modular-kitchen" class="block text-slate-800 font-semibold">Modular Kitchen »</a>
+                            <div class="absolute left-full top-0 w-52 bg-white rounded-lg shadow-lg py-1 hidden group-hover:block border border-lime-100 z-50">
+                                <a href="#laminate-kitchen" class="block px-4 py-2 text-sm text-slate-700 hover:bg-lime-100 mobile-link">Laminate Kitchen</a>
+                                <a href="#acrylic-kitchen" class="block px-4 py-2 text-sm text-slate-700 hover:bg-lime-100 mobile-link">Acrylic Kitchen</a>
+                                <a href="#pu-kitchen" class="block px-4 py-2 text-sm text-slate-700 hover:bg-lime-100 mobile-link">PU Kitchen</a>
+                            </div>
+                        </div>
+                        <div class="group relative px-4 py-2 hover:bg-lime-50">
+                            <a href="#wardrobes" class="block text-slate-800 font-semibold">Wardrobes »</a>
+                            <div class="absolute left-full top-0 w-52 bg-white rounded-lg shadow-lg py-1 hidden group-hover:block border border-lime-100 z-50">
+                                <a href="#modular-laminate-wardrobe" class="block px-4 py-2 text-sm text-slate-700 hover:bg-lime-100 mobile-link">Modular Laminate Finish</a>
+                                <a href="#modular-acrylic-wardrobe" class="block px-4 py-2 text-sm text-slate-700 hover:bg-lime-100 mobile-link">Modular Acrylic Finish</a>
+                                <a href="#carpentry-laminate-wardrobe" class="block px-4 py-2 text-sm text-slate-700 hover:bg-lime-100 mobile-link">Carpentry Laminate Finish</a>
+                            </div>
+                        </div>
+                        <div class="group relative px-4 py-2 hover:bg-lime-50">
+                             <a href="#full-renovation" class="block text-slate-800 font-semibold">Full Renovation »</a>
+                            <div class="absolute left-full top-0 w-52 bg-white rounded-lg shadow-lg py-1 hidden group-hover:block border border-lime-100 z-50">
+                                <a href="#civil-work" class="block px-4 py-2 text-sm text-slate-700 hover:bg-lime-100 mobile-link">All Types Civil Work</a>
+                                <a href="#painting" class="block px-4 py-2 text-sm text-slate-700 hover:bg-lime-100 mobile-link">Painting</a>
+                                <a href="#false-ceiling" class="block px-4 py-2 text-sm text-slate-700 hover:bg-lime-100 mobile-link">False Ceiling</a>
+                                <a href="#wall-paneling" class="block px-4 py-2 text-sm text-slate-700 hover:bg-lime-100 mobile-link">Wall Paneling</a>
+                                <a href="#safety-door" class="block px-4 py-2 text-sm text-slate-700 hover:bg-lime-100 mobile-link">Safety Door</a>
+                            </div>
+                        </div>
+                        <a href="#tv-unit" class="block px-4 py-2 text-slate-800 font-semibold hover:bg-lime-50 mobile-link">TV Unit</a>
+                        <a href="#Accessories" class="block px-4 py-2 text-slate-800 font-semibold hover:bg-lime-50 mobile-link">Accessories & HardWare</a>
+
+
+                    </div>
+                </div>
+                <a href="#projects" class="text-slate-600 hover:text-lime-500 transition duration-300 font-bold">Projects</a>
+                <a href="#contact" class="text-slate-600 hover:text-lime-500 transition duration-300 font-bold">Contact</a>
+                <a href="#contact" class="bg-lime-500 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-red-500 transition duration-300" target="blank">Book a Consultation</a>
+            </div>
+             <!-- Mobile Menu Toggle -->
+            <div class="md:hidden flex items-center">
+                <div class="menu-bar p-2 rounded-lg" id="menu-toggle">
+                    <div class="line rounded"></div>
+                    <div class="line rounded"></div>
+                    <div class="line rounded"></div>
+                </div>
+            </div>
+        </nav>
+         <!-- Mobile Navigation Links -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-4">
+            <a href="#" class="block px-6 py-2 text-slate-600 hover:bg-gray-100 transition duration-300 mobile-link">Home</a>
+            <a href="#about" class="block px-6 py-2 text-slate-600 hover:bg-gray-100 transition duration-300 mobile-link">About</a>
+            <a href="#services" class="block px-6 py-2 text-slate-600 hover:bg-gray-100 transition duration-300 mobile-link">Services</a>
+            
+            <div class="px-6 py-2">
+                <button id="products-toggle-mobile" class="w-full text-left text-slate-600 font-bold hover:text-lime-500 transition duration-300 flex justify-between items-center">
+                    Products <span class="arrow-icon text-xs">▼</span>
+                </button>
+                <div id="products-menu-mobile" class="hidden mt-2 ml-4">
+                    <button class="w-full text-left py-1 text-slate-600 hover:bg-gray-100 sub-toggle-btn" data-target="mk-sub">Modular Kitchen <span class="sub-arrow">▶</span></button>
+                    <div id="mk-sub" class="hidden ml-4">
+                        <a href="#laminate-kitchen" class="block py-1 text-sm text-slate-700 hover:bg-gray-50 mobile-link">Laminate Kitchen</a>
+                        <a href="#acrylic-kitchen" class="block py-1 text-sm text-slate-700 hover:bg-gray-50 mobile-link">Acrylic Kitchen</a>
+                        <a href="#pu-kitchen" class="block py-1 text-sm text-slate-700 hover:bg-gray-50 mobile-link">PU Kitchen</a>
+                    </div>
+                    <button class="w-full text-left py-1 text-slate-600 hover:bg-gray-100 sub-toggle-btn" data-target="wardrobe-sub">Wardrobes <span class="sub-arrow">▶</span></button>
+                    <div id="wardrobe-sub" class="hidden ml-4">
+                        <a href="#modular-laminate-wardrobe" class="block py-1 text-sm text-slate-700 hover:bg-gray-50 mobile-link">Modular Laminate Finish</a>
+                        <a href="#modular-acrylic-wardrobe" class="block py-1 text-sm text-slate-700 hover:bg-gray-50 mobile-link">Modular Acrylic Finish</a>
+                        <a href="#carpentry-laminate-wardrobe" class="block py-1 text-sm text-slate-700 hover:bg-gray-50 mobile-link">Carpentry Laminate Finish</a>
+                    </div>
+                    <a href="#tv-unit" class="block py-1 text-slate-600 hover:bg-gray-100 mobile-link">TV Unit</a>
+                    <button class="w-full text-left py-1 text-slate-600 hover:bg-gray-100 sub-toggle-btn" data-target="renovation-sub">Full Renovation <span class="sub-arrow">▶</span></button>
+                    <div id="renovation-sub" class="hidden ml-4">
+                        <a href="#civil-work" class="block py-1 text-sm text-slate-700 hover:bg-gray-50 mobile-link">All Types Civil Work</a>
+                        <a href="#painting" class="block py-1 text-sm text-slate-700 hover:bg-gray-50 mobile-link">Painting</a>
+                        <a href="#false-ceiling" class="block py-1 text-sm text-slate-700 hover:bg-gray-50 mobile-link">False Ceiling</a>
+                        <a href="#wall-paneling" class="block py-1 text-sm text-slate-700 hover:bg-gray-50 mobile-link">Wall Paneling</a>
+                        <a href="#safety-door" class="block py-1 text-sm text-slate-700 hover:bg-gray-50 mobile-link">Safety Door</a>
+                        
+                    </div>
+                    <a href="#Accessories" class="block px-4 py-2 text-slate-800 font-semibold hover:bg-lime-50 mobile-link">Accessories & HardWare</a>
+                </div>
+            </div>
+            <a href="#projects" class="block px-6 py-2 text-slate-600 hover:bg-gray-100 transition duration-300 mobile-link">Projects</a>
+            <a href="#contact" class="block px-6 py-2 text-slate-600 hover:bg-gray-100 transition duration-300 mobile-link">Contact</a>
+             <!--<a href="https://wa.me/9064734071" class="block text-center mt-4 mx-6 bg-lime-500 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-red-500 transition duration-300" target="_blank">Book a Consultation</a>-->
+        </div>
+
+    </header>
+
+    <main class="mt-20">
+        <!-- Hero Section -->
+        <section class="relative h-[70vh] md:h-[80vh] flex items-center justify-center text-white hero-bg-image">            
+            <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-slate-900 opacity-60"></div>
+            <!-- Content -->
+    <div class="relative z-10 text-center max-w-4xl mx-auto px-6">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
+            Transforming Your Space, Crafting Your Story
+        </h1>
+        <p class="mt-4 text-xl md:text-2xl font-light max-w-2xl mx-auto">
+            We bring your unique vision to life with personalized and luxurious interior design solutions.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <a href="#projects" class="bg-red-500 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-red-600 transition duration-300">
+                Explore Our Work
+            </a>
+            <a href="#contact" class="bg-lime-500 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-lime-600 transition duration-300">
+                Book a Free Consultation
+            </a>
+        </div>
+    </div>
+</section>
+<!--  FLOATING WHATSAPP BUTTON   -->
+                    <a href="https://wa.me/919064734071" target="_blank"
+                    class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-xl z-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.04 0C5.39 0 .01 5.38.01 12.02c0 2.12.55 4.19 1.59 6.02L0 24l6.12-1.6a12 12 0 005.92 1.52h.01c6.63 0 12.02-5.38 12.02-12.02C24.06 5.38 18.67 0 12.04 0z"/>
+                    </svg>
+                    </a>
+
+        <!-- About Us Section -->
+        <section id="about" class="section container mx-auto px-6">
+            <h2 class="max-w-fit mx-auto text-5xl font-bold text-center text-white mb-16 bg-lime-500 px-6 py-4 rounded-3xl shadow-lg text-shadow">About Our Studio</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-lg">
+                    <p class="mb-6 leading-relaxed">Our studio was founded on the belief that a well-designed space can profoundly impact your well-being. We create interiors that are not just beautiful, but are also deeply personal, functional, and reflective of your lifestyle.</p>
+                    <p class="leading-relaxed">Our team of experienced designers meticulously manages every aspect of your project, from the initial concept to the final installation. We are committed to a collaborative process, ensuring that your ideas are at the heart of every decision. We specialize in blending timeless elegance with modern sensibilities, creating spaces that you will love for years to come.</p>
+                </div>
+                <div class="flex justify-center group relative">
+                    <img class="rounded-2xl shadow-xl max-w-full h-auto transition duration-300 transform group-hover:scale-105" src="Img\living 1.jpg" alt="A stylized abstract representation of an interior design studio.">
+                    <div class="absolute inset-0 bg-slate-900 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-0 transition duration-300"></div>
+                </div>
+            </div>
+        </section>
+            <!-- Services Section -->
+        <section id="services" class="section bg-slate-50 container mx-auto px-6 rounded-3xl shadow-xl">
+            <h2 class="max-w-fit mx-auto text-5xl font-bold text-center text-white mb-16 bg-lime-500 px-6 py-4 rounded-3xl shadow-lg text-shadow">Our Core Services</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-2 text-slate-900">🍽️ Modular Kitchen</h3>
+                    <p class="text-slate-600">Smartly designed kitchens that blend functionality with style, offering customized layouts, durable finishes, and modern storage solutions to make cooking a delight.</p>
+                    <a href="#modular-kitchen" class="mt-4 inline-block text-red-500 hover:text-red-700 font-semibold transition duration-300">View Product Details</a>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-2 text-slate-900">🧥 Wardrobe</h3>
+                    <p class="text-slate-600">Elegant and space-efficient wardrobes tailored to your lifestyle, with sleek designs, premium materials, and smart organization for a clutter-free home.</p>
+                    <a href="#wardrobes" class="mt-4 inline-block text-red-500 hover:text-red-700 font-semibold transition duration-300">View Product Details</a>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-2 text-slate-900">📺 TV Unit</h3>
+                    <p class="text-slate-600">Contemporary TV units that enhance your living room, combining aesthetics with practical storage to create the perfect entertainment hub.</p>
+                    <a href="#tv-unit" class="mt-4 inline-block text-red-500 hover:text-red-700 font-semibold transition duration-300">View Product Details</a>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-2 text-slate-900">🏠 Full Renovation</h3>
+                    <p class="text-slate-600">Comprehensive renovation services covering interiors and civil work, transforming your entire space with expert planning, quality execution, and luxurious finishes.</p>
+                    <a href="#full-renovation" class="mt-4 inline-block text-red-500 hover:text-red-700 font-semibold transition duration-300">View Product Details</a>
+                </div>
+            </div>
+
+        </section>
+        <!-- Products Detail Section -->
+        <section id="products" class="section container mx-auto px-6">
+            <h2 class="max-w-fit mx-auto text-5xl font-bold text-center text-white mb-16 bg-lime-500 px-6 py-4 rounded-3xl shadow-lg text-shadow">
+                Product Details
+                </h2>
+            <div id="modular-kitchen" class="mb-16">
+                <h3 class="text-4xl font-bold text-slate-900 border-b-2 border-slate-900 pb-3 mb-8">🍽️ Modular Kitchen Solutions</h3>
+                <p class="text-base mb-8 font-bold text-slate-500">Our modular kitchens are designed for the modern Indian home, focusing on efficient space utilization, durability, and a flawless aesthetic. Choose from a variety of finishes to match your style. </p>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div id="laminate-kitchen" class="card bg-white border border-lime-200">
+                        <h4 class="text-2xl font-semibold mb-3 text-red-500">Laminate Kitchen</h4>
+                        <p class="text-slate-700">The most popular choice for its durability and cost-effectiveness. Laminate finishes are highly resistant to scratches and moisture, offering a wide array of colors and textures from matte to high-gloss. Ideal for high-traffic kitchens.</p>
+                    </div>
+                    <div id="acrylic-kitchen" class="card bg-white border border-lime-200">
+                        <h4 class="text-2xl font-semibold mb-3 text-red-500">Acrylic Kitchen</h4>
+                        <p class="text-slate-700">Known for its luxurious, mirror-like high-gloss finish, an Acrylic kitchen makes the space look brighter and more expansive. It offers excellent color retention and a premium look, perfect for a sleek, contemporary design.</p>
+                    </div>
+                    <div id="pu-kitchen" class="card bg-white border border-lime-200">
+                        <h4 class="text-2xl font-semibold mb-3 text-red-500">PU Kitchen</h4>
+                        <p class="text-slate-700">Polyurethane (PU) finish is a premium, smooth, and matte/satin finish applied over MDF or HDF. It provides a seamless, sophisticated look and is highly durable against heat and moisture. Perfect for designer kitchens seeking a European feel.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="wardrobes" class="mb-16">
+                <h3 class="text-4xl font-bold text-slate-900 border-b-2 border-slate-900 pb-3 mb-8">🧥 Custom Wardrobes</h3>
+                <p class="text-base mb-8 font-bold text-slate-500 ">Maximize your bedroom storage with our bespoke wardrobe solutions. We offer options to suit every budget and design preference, ensuring your space remains organized and stylish. </p>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div id="modular-laminate-wardrobe" class="card bg-white border border-lime-200">
+                        <h4 class="text-2xl font-semibold mb-3 text-red-500">Modular Laminate Finish</h4>
+                        <p class="text-slate-700">Built-in factory with precision and standard sizing, featuring durable laminate finish. Offers quick installation, perfect finish consistency, and can be disassembled if you move homes.</p>
+                    </div>
+                    <div id="modular-acrylic-wardrobe" class="card bg-white border border-lime-200">
+                        <h4 class="text-2xl font-semibold mb-3 text-red-500">Modular Acrylic Finish</h4>
+                        <p class="text-slate-700">Factory-made unit with a high-gloss, reflective acrylic surface. Provides a premium, sleek aesthetic with excellent scratch resistance and a modern look. Available in a variety of vibrant colours.</p>
+                    </div>
+                    <div id="carpentry-laminate-wardrobe" class="card bg-white border border-lime-200">
+                        <h4 class="text-2xl font-semibold mb-3 text-red-500">Carpentry Laminate Finish</h4>
+                        <p class="text-slate-700">On-site construction by skilled carpenters, offering complete customisation to any irregular space. Finished with laminate for durability and choice of texture/colour.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tv-unit" class="mb-16">
+                <h3 class="text-4xl font-bold text-slate-900 border-b-2 border-slate-900 pb-3 mb-8">📺 Designer TV Units</h3>
+                <div class="card bg-white border border-lime-200">
+                     <p class="text-lg text-slate-700 font-bold">Our custom TV units are designed to be the focal point of your living area. We seamlessly integrate wiring management, open shelving, and closed storage with aesthetic wall paneling, using premium materials like veneer, laminate, and back-painted glass to create a sophisticated entertainment experience. </p>
+                </div>
+            </div>
+
+            <div id="full-renovation" class="mb-10">
+                <h3 class="text-4xl font-bold text-slate-900 border-b-2 border-slate-900 pb-3 mb-8">🏠 Comprehensive Renovation Services</h3>
+                <p class="text-base mb-8 font-bold text-slate-500">Our full renovation services handle all aspects of your home's transformation, from structural changes to fine finishing, ensuring a single point of contact for a hassle-free experience. </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+                    <div id="civil-work" class="card bg-white border border-lime-200">
+                        <h4 class="text-xl font-semibold mb-2 text-red-500">All Types Civil Work</h4>
+                        <p class="text-slate-700">Includes all masonry, flooring, tiling, demolition, and wall construction needed for structural changes and new room layouts.</p>
+                    </div>
+                    <div id="painting" class="card bg-white border border-lime-200">
+                        <h4 class="text-xl font-semibold mb-2 text-red-500">Painting</h4>
+                        <p class="text-slate-700">Professional interior painting services using high-quality materials and finishes like matte, lustre, and texture paints.</p>
+                    </div>
+                    <div id="false-ceiling" class="card bg-white border border-lime-200">
+                        <h4 class="text-xl font-semibold mb-2 text-red-500">False Ceiling</h4>
+                        <p class="text-slate-700">Innovative false ceiling designs (POP/Gypsum) with integrated lighting to enhance ambiance, conceal wiring, and improve acoustics. </p>
+                    </div>
+                    <div id="wall-paneling" class="card bg-white border border-lime-200">
+                        <h4 class="text-xl font-semibold mb-2 text-red-500">Wall Paneling</h4>
+                        <p class="text-slate-700">Decorative wall paneling with materials like wood, veneer, MDF, or fabric to add texture, warmth, and a luxurious feel to any room.</p>
+                    </div>
+                    <div id="safety-door" class="card bg-white border border-lime-200">
+                        <h4 class="text-xl font-semibold mb-2 text-red-500">Safety Door</h4>
+                        <p class="text-slate-700">Installation of secure, aesthetically pleasing main entry safety doors with robust locking mechanisms and custom finishes.</p>
+                    </div>
+                </div>
+            </div>
+            <!--Accessories & Hardware Section-->
+             <div id="Accessories" class="mb-0">
+  <h3 class="max-w-fit mx-auto text-3xl sm:text-4xl md:text-5xl font-bold text-center text-white mb-16 bg-lime-500 px-6 py-4 rounded-3xl shadow-lg text-shadow">
+    🛠️ Accessories & Hardware
+  </h3>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="card bg-white border border-lime-200">
+      <h4 class="text-xl font-semibold mb-2 text-red-500">Kitchen Accessories</h4>
+      <ul class="list-disc list-inside text-slate-700">
+        <li>Pantry Unit</li>
+        <li>Tandem Basket</li>
+        <li>Magic Corner</li>
+        <li>Masala Pull Out</li>
+      </ul>
+    </div>
+
+    <div class="card bg-white border border-lime-200">
+      <h4 class="text-xl font-semibold mb-2 text-red-500">Wardrobe Accessories</h4>
+      <ul class="list-disc list-inside text-slate-700">
+        <li>Saree Hanger</li>
+        <li>Locker</li>
+      </ul>
+    </div>
+
+    <div class="card bg-white border border-lime-200">
+      <h4 class="text-xl font-semibold mb-2 text-red-500">Hardware</h4>
+      <ul class="list-disc list-inside text-slate-700">
+        <li>Häfele Hinges</li>
+        <li>Häfele Channels</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+        </section>
+        <!--Warranty Section -->
+        <section id="warranty" class="relative mb-6 ">
+            <!-- Warranty Content -->
+            <div class="max-w-2xl mx-auto text-center bg-white px-8 py-12 rounded-3xl shadow-xl">
+                <h3 class=" card text-4xl font-bold text-red-500 mb-6">WARRANTY ASSURANCE</h3>
+                <p class="text-lg text-slate-600 font-medium mb-4">
+                We stand by the quality of our modular products.
+                </p>
+                <p class="text-xl font-semibold text-lime-600">
+                5-Year Warranty on all modular products
+                </p>
+                <p class="text-base text-slate-500 mt-4">
+                Our warranty ensures durability, functionality, and peace of mind. Every product is built to last, 
+                and we guarantee support for five years to keep your spaces stylish and reliable.
+                </p>
+            </div>
+            </section>
+            <section id="why-choose-us" class="section container mx-auto px-6 mt-4">
+  <h2 class="max-w-fit mx-auto text-5xl font-bold text-center text-white mb-16 bg-lime-500 px-6 py-4 rounded-3xl shadow-lg text-shadow">
+    Why Choose Us
+  </h2>
+
+  <div class="grid md:grid-cols-3 gap-12 text-center">
+    
+    <!-- Interiors Brand -->
+    <div class=" card p-6 rounded-2xl shadow-lg bg-white hover:shadow-xl transition duration-300">
+      <div class="text-5xl mb-4">🏡</div>
+      <h4 class="font-semibold text-xl mb-2 text-red-500">Trusted Interiors Brand</h4>
+      <p class="text-slate-600 leading-relaxed">
+        We are recognized for creating timeless interiors that blend elegance with modern living. 
+        Our brand stands for quality, creativity, and personalized design solutions.
+      </p>
+    </div>
+
+    <!-- Hardware Finishing -->
+    <div class=" card p-6 rounded-2xl shadow-lg bg-white hover:shadow-xl transition duration-300">
+      <div class="text-5xl mb-4">🛠️</div>
+      <h4 class="font-semibold text-xl mb-2 text-red-500">Premium Hardware Finishing</h4>
+      <p class="text-slate-600 leading-relaxed">
+        From fixtures to fittings, we ensure every detail is crafted with precision. 
+        Our hardware finishing guarantees durability, functionality, and a refined aesthetic.
+      </p>
+    </div>
+
+    <!-- Timely Delivery -->
+    <div class=" card p-6 rounded-2xl shadow-lg bg-white hover:shadow-xl transition duration-300">
+      <div class="text-5xl mb-4">⏱️</div>
+      <h4 class="font-semibold text-xl mb-2 text-red-500">Timely Delivery</h4>
+      <p class="text-slate-600 leading-relaxed">
+        We value your time. Our streamlined process and dedicated team ensure projects are 
+        completed on schedule without compromising on quality.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+        <!-- Our Projects Section -->
+        <section id="projects" class="section container mx-auto px-6 -mt-8">
+            <h2 class="max-w-fit mx-auto text-5xl font-bold text-center text-white mb-16 bg-lime-500 px-6 py-4 rounded-3xl shadow-lg text-shadow">Our Projects</h2>
+            <!-- Project Filter Buttons -->
+            <div class="flex flex-wrap justify-center space-x-4 mb-12">
+                <button data-filter="all" class="filter-btn active bg-red-500 text-white font-semibold px-6 py-2 rounded-full hover:bg-lime-500 transition duration-300">All</button>
+                <button data-filter="kitchen" class="filter-btn bg-red-500 text-white font-semibold px-6 py-2 rounded-full hover:bg-lime-500 transition duration-300">Kitchen</button>
+                <button data-filter="wardrobe" class="filter-btn bg-red-500 text-white font-semibold px-6 py-2 rounded-full hover:bg-lime-500 transition duration-300">Wardrobe</button>
+                <button data-filter="living-room" class="filter-btn bg-red-500 text-white font-semibold px-6 py-2 rounded-full hover:bg-lime-500 transition duration-300">Living Room</button>
+                <button data-filter="bedroom" class="filter-btn bg-red-500 text-white font-semibold px-6 py-2 rounded-full hover:bg-lime-500 transition duration-300">Bedroom</button>
+            </div>
+            <!-- Project Gallery -->
+            <div id="project-gallery" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Living Room -->
+                <div class="project-item group relative rounded-3xl overflow-hidden shadow-xl cursor-pointer" data-category="living-room">
+                    <img class="w-full h-80 object-cover transition duration-300 transform group-hover:scale-110" src="Img\living 2.jpg" alt="A modern living room design.">
+                    <div class="absolute inset-0 bg-slate-900 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-2xl font-semibold">Living Room</span>
+                    </div>
+                </div>
+                <!-- Kitchen -->
+                <div class="project-item group relative rounded-3xl overflow-hidden shadow-xl cursor-pointer" data-category="kitchen">
+                    <img class="w-full h-80 object-cover transition duration-300 transform group-hover:scale-110" src="Img\kitchen 2.jpg" alt="A contemporary kitchen design.">
+                    <div class="absolute inset-0 bg-slate-900 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-2xl font-semibold">Kitchen</span>
+                    </div>
+                </div>
+                <!-- Bedroom -->
+                <div class="project-item group relative rounded-3xl overflow-hidden shadow-xl cursor-pointer" data-category="bedroom">
+                    <img class="w-full h-80 object-cover transition duration-300 transform group-hover:scale-110" src="Img\bed 2.jpg" alt="A cozy bedroom design.">
+                    <div class="absolute inset-0 bg-slate-900 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-2xl font-semibold">Bedroom</span>
+                    </div>
+                </div>
+                <!-- Wardrobe -->
+                <div class="project-item group relative rounded-2xl overflow-hidden shadow-xl cursor-pointer" data-category="wardrobe">
+                    <img class="w-full h-80 object-cover transition duration-300 transform group-hover:scale-110" src="Img\wardrobe 2.jpg" alt="A stylish wardrobe solution.">
+                    <div class="absolute inset-0 bg-slate-900 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-2xl font-semibold">Wardrobe</span>
+                    </div>
+                </div>
+                <!-- Kitchen -->
+                <div class="project-item group relative rounded-2xl overflow-hidden shadow-xl cursor-pointer" data-category="kitchen">
+                    <img class="w-full h-80 object-cover transition duration-300 transform group-hover:scale-110" src="Img\kitchen 1.jpg" alt="A stylish kitchen design with island.">
+                    <div class="absolute inset-0 bg-slate-900 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-2xl font-semibold">Kitchen</span>
+                    </div>
+                </div>
+                <!-- Living Room -->
+                <div class="project-item group relative rounded-2xl overflow-hidden shadow-xl cursor-pointer" data-category="living-room">
+                    <img class="w-full h-80 object-cover transition duration-300 transform group-hover:scale-110" src="Img\living 1.jpg" alt="A modern living room with bright colors.">
+                    <div class="absolute inset-0 bg-slate-900 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-2xl font-semibold">Living Room</span>
+                    </div>
+                </div>
+                <!-- Bedroom -->
+                <div class="project-item group relative rounded-2xl overflow-hidden shadow-xl cursor-pointer" data-category="bedroom">
+                    <img class="w-full h-80 object-cover transition duration-300 transform group-hover:scale-110" src="Img\bed1.jpg" alt="A peaceful bedroom with warm tones.">
+                    <div class="absolute inset-0 bg-slate-900 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-2xl font-semibold">Bedroom</span>
+                    </div>
+                </div>
+                <!-- Wardrobe -->
+                <div class="project-item group relative rounded-2xl overflow-hidden shadow-xl cursor-pointer" data-category="wardrobe">
+                    <img class="w-full h-80 object-cover transition duration-300 transform group-hover:scale-110" src="Img\wardrobe1.jpg" alt="A modern and organized wardrobe.">
+                    <div class="absolute inset-0 bg-lime-100 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-2xl font-semibold">Wardrobe</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--After & Before Section-->
+            <section id="before-after-gallery" class="section container mx-auto px-6 -mt-16">
+                <h2 class="max-w-fit mx-auto text-5xl font-bold text-center text-white mb-16 bg-lime-500 px-6 py-4 rounded-3xl shadow-lg text-shadow">Before & After Gallery</h2>
+                
+                <div class="slider-grid">
+                    <!-- Slider 1 -->
+                    <div class="before-after">
+                    <img src="Img/kitchen 2.jpg" class="before-img" alt="Before">
+                    <img src="Img/kitchen 1.jpg" class="after-img" alt="After">
+                    <div class="slider-handle"></div>
+                    </div>
+
+                    <!-- Slider 2 -->
+                    <div class="before-after">
+                    <img src="Img/living 2.jpg" class="before-img" alt="Before">
+                    <img src="Img/living 1.jpg" class="after-img" alt="After">
+                    <div class="slider-handle"></div>
+                    </div>
+
+                    <!-- Slider 3 -->
+                    <div class="before-after">
+                    <img src="Img/bed 2.jpg" class="before-img" alt="Before">
+                    <img src="Img/bed1.jpg" class="after-img" alt="After">
+                    <div class="slider-handle"></div>
+                    </div>
+
+                    <!-- Slider 4 -->
+                    <div class="before-after">
+                    <img src="Img/wardrobe 2.jpg" class="before-img" alt="Before">
+                    <img src="Img/wardrobe1.jpg" class="after-img" alt="After">
+                    <div class="slider-handle"></div>
+                    </div>
+                </div>
+            </section>
+
+   <!-- Projects Progress bar-->
+
+            <section id="process" class="section container mx-auto px-6">
+  <h2 class="max-w-fit mx-auto text-3xl sm:text-4xl md:text-5xl font-bold text-center text-white mb-16 bg-lime-500 px-6 py-4 rounded-3xl shadow-lg text-shadow">
+    Project Progress Journey
+  </h2>
+
+  <div class="relative">
+    <!-- Timeline -->
+<div class="hidden md:block absolute h-1 bg-red-400 top-[28px] left-[7%] right-[7%] rounded-full overflow-hidden">
+  <div id="timeline-fill" class="h-full bg-lime-500 w-0 transition-all duration-700"></div>
+</div>
+
+
+    <div class="grid grid-cols-1 md:grid-cols-7 gap-12 text-center">
+      
+      <!-- Step 1 -->
+      <div class="process-step relative">
+        <div class="progress-icon bg-lime-500 hover:bg-red-500 transition-colors duration-300">
+          📞
+        </div>
+        <h4 class="mt-4 font-semibold">Consultation</h4>
+        <p class="text-sm text-slate-600">Understanding your requirements</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="process-step relative">
+        <div class="progress-icon bg-lime-500 hover:bg-red-500 transition-colors duration-300">
+          📐
+        </div>
+        <h4 class="mt-4 font-semibold">Site Visit</h4>
+        <p class="text-sm text-slate-600">Measurements & analysis</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="process-step relative">
+        <div class="progress-icon bg-lime-500 hover:bg-red-500 transition-colors duration-300">
+          🎨
+        </div>
+        <h4 class="mt-4 font-semibold">Design</h4>
+        <p class="text-sm text-slate-600">3D & layout planning</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="process-step relative">
+        <div class="progress-icon bg-lime-500 hover:bg-red-500 transition-colors duration-300">
+          🧱
+        </div>
+        <h4 class="mt-4 font-semibold">Material Selection</h4>
+        <p class="text-sm text-slate-600">Finishes & accessories</p>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="process-step relative">
+        <div class="progress-icon bg-lime-500 hover:bg-red-500 transition-colors duration-300">
+          🛠️
+        </div>
+        <h4 class="mt-4 font-semibold">Execution</h4>
+        <p class="text-sm text-slate-600">On-site work starts</p>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="process-step relative">
+        <div class="progress-icon bg-lime-500 hover:bg-red-500 transition-colors duration-300">
+          ✅
+        </div>
+        <h4 class="mt-4 font-semibold">Quality Check</h4>
+        <p class="text-sm text-slate-600">Inspection & corrections</p>
+      </div>
+
+      <!-- Step 7 -->
+      <div class="process-step relativerelative">
+        <div class="progress-icon bg-lime-500 hover:bg-red-500 transition-colors duration-300">
+          🏠
+        </div>
+        <h4 class="mt-4 font-semibold">Handover</h4>
+        <p class="text-sm text-slate-600">Final delivery & warranty</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section container mx-auto px-6 -mt-8">
+            <h2 class="max-w-fit mx-auto text-5xl font-bold text-center text-white mb-16 bg-lime-500 px-6 py-4 rounded-3xl shadow-lg text-shadow">Let's Create Your Dream Space</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="card bg-white">
+                    <h3 class="text-xl md:text-2xl font-semibold">Get in Touch</h3>
+                    <p class="text-slate-600 mb-6">Fill out the form below to begin your design journey. We'll get back to you within 24 hours for your site visit.</p>
+                    <form id="contactForm">
+                        <div class="mb-2">
+                            <label for="name" class="block text-slate-700 font-medium mb-2">Full Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="mb-2">
+                            <label for="phone" class="block text-slate-700 font-medium mb-2">Phone Number</label>
+                            <input type="text" id="phone" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="Your Phone Number" required>
+                        </div>
+
+                        <div class="mb-2">
+                            <label for="email" class="block text-slate-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="your.email@example.com" required>
+                        </div>
+
+                        <div class="mb-2">
+                            <label for="datetime" class="block text-slate-700 font-medium mb-2">Preferred Date & Time:</label>
+                            <input type="datetime-local" id="datetime" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
+                        </div>
+                        <!-- Project Type Dropdown Field -->
+                        <div class="mb-2">
+                            <label for="projectType" class="block text-slate-700 font-medium mb-2">Type Of Project</label>
+                            <select id="projectType" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
+                                <option value="">Select your project type</option>
+                                <option value="Laminate kitchen">Laminate kitchen</option>
+                                <option value="Acrylic Kitchen">Acrylic Kitchen</option>
+                                <option value="PU Kitchen">PU Kitchen</option>
+                                <option value="Modular Laminate Wardrobe">Modular Laminate Finish Wardrobe</option>
+                                <option value="Modular Acrylic Wardrobe">Modular Acrylic Finish Wardrobe</option>
+                                <option value="Carpentry Laminate Wardrobe">Carpentry Laminate Finish Wardrobe</option>
+                                <option value="Tv Unit">Tv Unit</option>
+                                <option value="Full Renovation">Full Renovation (Civil/Interior)</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-2">
+                            <label for="message" class="block text-slate-700 font-medium mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="Tell us about your project..." ></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-lime-500 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-red-500 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="text-center md:text-left">
+                       <h3 class=" flex items-center text-xl md:text-2xl font-semibold  ">
+                        <!-- Phone Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" viewBox="0 0 24 24" 
+                            stroke-width="1.5" stroke="currentColor" 
+                            class="w-6 h-6 mr-2 text-lime-700">
+                            <path stroke-linecap="round" stroke-linejoin="round" 
+                                d="M2.25 6.75c0-1.243 1.007-2.25 2.25-2.25h3.75c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125H6.75a.75.75 0 00-.75.75v2.25a9.75 9.75 0 009.75 9.75h2.25a.75.75 0 00.75-.75v-2.25c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125v3.75c0 1.243-1.007 2.25-2.25 2.25H15a12.75 12.75 0 01-12.75-12.75V6.75z" />
+                        </svg>
+                        <span class="text-2xl font-semibold mr-2">Call Us:</span> 
+                        <a href="tel:+919876543210" class="text-blue-600 hover:underline">
+                            +91 98765 43210
+                        </a>
+
+                        <h3 class="text-2xl font-semibold mb-20 text-slate-900 flex items-center">
+                        <!-- Mail Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" viewBox="0 0 24 24" 
+                            stroke-width="1.5" stroke="currentColor" 
+                            class="w-6 h-6 mr-2 text-red-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" 
+                                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.5a2.25 2.25 0 01-2.36 0l-7.5-4.5a2.25 2.25 0 01-1.07-1.916V6.75" />
+                        </svg>
+                        <span class="text-2xl font-semibold mr-2">Email Us:</span>
+                        <a href="mailto:info@designnest.in" class="text-blue-600 hover:underline">
+                            info@designnest.in
+                        </a>
+                    
+                    <h3 class="text-2xl font-semibold mb-4 text-slate-900">Our Location</h3>
+                    <div class="rounded-2xl overflow-hidden shadow-xl mb-6">
+                        <iframe class="w-full h-64 sm:h-72 md:h-80" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.144415535549!2d72.807531!3d19.4661089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9702510328b%3A0xe6e6539322c25af6!2sHDIL%20Residency%20Park%202!5e0!3m2!1sen!2sus!4v1612345678901!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="flex justify-center md:justify-start space-x-4 mt-4">
+                        <a href="https://instagram.com" target="_blank" class="text-slate-600 hover:text-red-500 transition duration-300">
+                            <!-- Instagram Icon SVG -->
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07c3.252.147 4.772 1.688 4.904 4.904.058 1.267.07 1.647.07 4.85s-.012 3.584-.07 4.85c-.132 3.252-1.688 4.772-4.904 4.904-.972.058-1.29.07-4.85.07s-3.878-.012-4.85-.07c-3.252-.132-4.772-1.688-4.904-4.904-.058-1.267-.07-1.647-.07-4.85s.012-3.584.07-4.85c.132-3.252 1.688-4.772 4.904-4.904.972-.058 1.29-.07 4.85-.07zm0-2.163c-3.265 0-3.674.013-4.935.071c-4.14 0-6.003 1.86-6.141 6.141-.058 1.261-.071 1.67-.071 4.935s.013 3.674.071 4.935c.138 4.14 1.86 6.003 6.141 6.141 1.261.058 1.67.071 4.935.071s3.674-.013 4.935-.071c4.14-.138 6.003-1.86 6.141-6.141.058-1.261.071-1.67.071-4.935s-.013-3.674-.071-4.935c-.138-4.14-1.86-6.003-6.141-6.141-1.261-.058-1.67-.071-4.935-.071z"></path>
+                            </svg>
+                        </a>
+                       
+                        <a href="https://facebook.com" target="_blank" class="text-blue-600 hover:text-red-500 transition duration-300">
+                            <!-- Facebook Icon SVG -->
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M22.675 0h-21.35c-0.732 0-1.325 0.593-1.325 1.325v21.35c0 0.732 0.593 1.325 1.325 1.325h11.411v-9.352h-3.111v-3.619h3.111v-2.66c0-3.08 1.821-4.757 4.63-4.757 1.321 0 2.454 0.098 2.784 0.142v3.253h-1.928c-1.515 0-1.808 0.721-1.808 1.777v2.333h3.593l-0.468 3.619h-3.125v9.352h6.071c0.732 0 1.325-0.593 1.325-1.325v-21.35c0-0.732-0.593-1.325-1.325-1.325z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer section -->
+    <footer class="bg-lime-500 hover:bg-red-500 text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2026 DesignNest. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4 text-sm">
+                <a href="#" class="hover:text-lime-50">Privacy Policy</a>
+                <a href="#" class="hover:text-lime-50">Terms of Service</a>
+                <p> Developed By: Debasis Das Mahapatra</p>
+            </div>
+        </div>
+    </footer>
+ <script src="script.js"></script>
+</body>
+</html>
